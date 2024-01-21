@@ -1,52 +1,58 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+// import { MenuBar } from "./menubar";
+import "./style.css";
 
-function Today() {
+const tasks = [
+  { id: 1, name: 'Task 1' },
+  { id: 2, name: 'Task 2' },
+  { id: 3, name: 'Task 3' }
+];
+
+const habits = [
+  { id: 1, name: 'Habit 1' },
+  { id: 2, name: 'Habit 2' },
+  { id: 3, name: 'Habit 3' }
+];
+
+export default function Today() {
   return (
-    <div className="page-container">
-      <header className="header">
-        <div className="logo">logo</div>
-        <nav className="navigation">
-          <a href="#today" className="nav-item active">today</a>
-          <a href="#feed" className="nav-item">feed</a>
-          <a href="#challenges" className="nav-item">challenges</a>
-          <a href="#profile" className="nav-item">profile</a>
-          <a href="#friends" className="nav-item">friends</a>
-          <a href="#settings" className="nav-item">settings</a>
-        </nav>
-      </header>
-      <main className="main-content">
-        <h1>Hello, Michelle</h1>
-        <section className="section">
-          <h2>To do</h2>
-          <div className="task-list">
-            {/* Replace with actual tasks */}
-            <div className="task"></div>
-            <div className="task"></div>
-            <div className="task"></div>
+    <div className="today-page">
+      <div className="div-2">
+        {/* <MenuBar className="menu-bar-instance" /> */}
+        <div className="text-wrapper-2">Hello, Michelle</div>
+        <div className="to-do">
+          <div className="text-wrapper-3">To do&nbsp;&nbsp;&gt;</div>
+          <div className="tasks-list">
+            {tasks.map((task) => (
+              <div key={task.id} className="task-item">
+                <input type="checkbox" id={`task-${task.id}`} className="task-checkbox" />
+                <label htmlFor={`task-${task.id}`} className="task-name">{task.name}</label>
+              </div>
+            ))}
           </div>
-        </section>
-        <section className="section">
-          <h2>Habits</h2>
-          {/* Replace with actual habits */}
-          <div className="task-list">
-            <div className="task"></div>
-            <div className="task"></div>
-            <div className="task"></div>
+        </div>
+        <div className="habits">
+          <div className="text-wrapper-3">Habits &gt;</div>
+          <div className="tasks-list">
+            {habits.map((task) => (
+              <div key={task.id} className="task-item">
+                <input type="checkbox" id={`task-${task.id}`} className="task-checkbox" />
+                <label htmlFor={`task-${task.id}`} className="task-name">{task.name}</label>
+              </div>
+            ))}
           </div>
-        </section>
-        <section className="section">
-          <h2>Completed</h2>
-          <div className="completed-tasks">
-            {/* Replace with actual completed tasks */}
-            <div className="completed"></div>
-            <div className="completed"></div>
-            <div className="completed"></div>
+        </div>
+        <div className="completed">
+          <div className="text-wrapper-3">Completed&nbsp;&nbsp;&gt;</div>
+          <div className="frame">
+            <div className="rectangle-7" />
+            <div className="rectangle-7" />
+            <div className="rectangle-7" />
+            <div className="rectangle-7" />
+            <div className="rectangle-7" />
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
     </div>
   );
-}
-
-export default Today;
+};
