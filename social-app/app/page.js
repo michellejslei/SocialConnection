@@ -8,14 +8,18 @@ export default function Home() {
       <div className="div">
         <div className="text-wrapper">Log In</div>
         <div className="email-box">
-          <div className="overlap-group">
-            <div className="text-wrapper-2">email</div>
-          </div>
+          <input
+              type="email"
+              placeholder="email"
+              className="overlap-group"
+            />
         </div>
         <div className="pw-box">
-          <div className="overlap-group">
-            <div className="text-wrapper-2">password</div>
-          </div>
+          <input
+              type="password"
+              placeholder="password"
+              className="overlap-group"
+            />
         </div>
         <div className="text-wrapper-3"><Link href = "./feed"><p>Go to Feed</p></Link></div>
         <div className="log-in-button">
