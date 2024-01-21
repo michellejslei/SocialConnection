@@ -17,7 +17,14 @@ export default function Home() {
             <div className="text-wrapper-2">password</div>
           </div>
         </div>
-        <div className="text-wrapper-3"><Link href = "./feed"><p>Go to Feed</p></Link></div>
+        <div className="text-wrapper-3">
+          <Link href="./feed">
+            <p>Go to Feed</p>
+          </Link>
+          <Link href="./toDo">
+            <p>Go toDo List</p>
+          </Link>
+        </div>
         <div className="log-in-button">
           <div className="overlap">
             <div className="text-wrapper-4">log in</div>
@@ -30,6 +37,5 @@ export default function Home() {
         </button>
       </div>
     </div>
-  )
+  );
 }
-
