@@ -1,20 +1,21 @@
 .log-in-page {
-    background-color: #efefef;
+    background-color: #f6f0ed;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
 .log-in-page .div {
-    background-color: #efefef;
+    background-color: #f6f0ed;
     height: 832px;
     position: relative;
     width: 1280px;
 }
 
 .log-in-page .text-wrapper {
-    color: #000000;
+    color: #28536b;
     font-family: "DM Serif Display-Regular", Helvetica;
     font-size: 48px;
     font-weight: 400;
@@ -88,7 +89,7 @@
 }
 
 .log-in-page .overlap {
-    background-color: #aeadad;
+    background-color: #28536b;
     border-radius: 20px;
     height: 46px;
     position: relative;
@@ -120,7 +121,7 @@
 }
 
 .log-in-page .div-wrapper {
-    background-color: #d9d9d9;
+    background-color: #7ea8be;
     border-radius: 20px;
     height: 46px;
     position: relative;
@@ -128,7 +129,7 @@
 }
 
 .log-in-page .text-wrapper-5 {
-    color: #969595;
+    color: #f6f0ed;
     font-family: "DM Serif Display-Regular", Helvetica;
     font-size: 16px;
     font-weight: 400;
