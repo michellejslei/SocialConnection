@@ -1,7 +1,7 @@
 import React from 'react';
-import './Home.css';
+import './style.css';
 
-function Home() {
+function Today() {
   return (
     <div className="page-container">
       <header className="header">
@@ -49,4 +49,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Today;

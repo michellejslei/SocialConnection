@@ -21,12 +21,14 @@ export default function Home() {
               className="overlap-group"
             />
         </div>
-        <div className="text-wrapper-3"><Link href = "./feed"><p>Go to Feed</p></Link></div>
-        <div className="log-in-button">
-          <div className="overlap">
-            <div className="text-wrapper-4">log in</div>
+        <div className="text-wrapper-3">forgot password?</div>
+        <Link href="./today" passHref>
+          <div className="log-in-button">
+            <div className="overlap">
+              <div className="text-wrapper-4">log in</div>
+            </div>
           </div>
-        </div>
+        </Link>
         <button className="sign-up-button">
           <div className="div-wrapper">
             <div className="text-wrapper-5">sign up</div>
