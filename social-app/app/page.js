@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Link from 'next/link'
 
+
 export default function Home() {
   return (
     <div className="log-in-page">
@@ -29,12 +30,18 @@ export default function Home() {
             </div>
           </div>
         </Link>
+        
         <button className="sign-up-button">
           <div className="div-wrapper">
-            <div className="text-wrapper-5">sign up</div>
+            <div className="text-wrapper-5"><a href="/api/auth/signup">
+        sign up
+      </a></div>
           </div>
         </button>
       </div>
     </div>
+    
+    
+    
   );
 }

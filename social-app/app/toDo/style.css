@@ -1,109 +1,269 @@
 .new-to-do-page {
     background-color: #f6f0ed;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    height: 100vh;
+    width: 100%;
   }
   
   .new-to-do-page .div {
     background-color: #f6f0ed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    height: 832px;
+    position: relative;
+    width: 526px;
   }
   
-  .new-to-do-page .text-wrapper,
-  .new-to-do-page .notes-entry .text-wrapper-2,
-  .new-to-do-page .description .text-wrapper-3,
-  .new-to-do-page .date .text-wrapper-3,
-  .new-to-do-page .frame .month .overlap-group .text-wrapper-4,
-  .new-to-do-page .frame .day .overlap .text-wrapper-5,
-  .new-to-do-page .frame .year .div-wrapper .text-wrapper-6,
-  .new-to-do-page .add-button .overlap-2 .text-wrapper-7,
-  .new-to-do-page .cancel-button .overlap-3 .text-wrapper-8 {
+  .new-to-do-page .text-wrapper {
     color: #28536b;
+    font-family: "DM Serif Display-Regular", Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    height: 66px;
+    left: 39px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 42px;
+  }
+  
+  .new-to-do-page .notes-entry {
+    height: 217px;
+    left: 39px;
+    position: absolute;
+    top: 383px;
+    width: 411px;
+  }
+  
+  .new-to-do-page .rectangle {
+    background-color: #ffffff;
+    height: 170px;
+    left: 12px;
+    position: absolute;
+    top: 47px;
+    width: 397px;
+  }
+  
+  .new-to-do-page .text-wrapper-2 {
+    color: #28536b;
+    font-family: "DM Serif Display-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    width: 80px;
+  }
+  
+  .new-to-do-page .description {
+    height: 85px;
+    left: 39px;
+    position: absolute;
+    top: 132px;
+    width: 411px;
+  }
+  
+  .new-to-do-page .to-do-entry {
+    background-color: #ffffff;
+    height: 35px;
+    left: 12px;
+    position: absolute;
+    top: 50px;
+    width: 397px;
+  }
+  
+  .new-to-do-page .text-wrapper-3 {
+    color: #28536b;
+    font-family: "DM Serif Display-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    height: 44px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+  
+  .new-to-do-page .date {
+    height: 86px;
+    left: 39px;
+    position: absolute;
+    top: 249px;
+    width: 411px;
+  }
+  
+  .new-to-do-page .frame {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 50px;
+    left: 12px;
+    position: absolute;
+    top: 51px;
+  }
+  
+  .new-to-do-page .month {
+    height: 35px;
+    position: relative;
+    width: 153px;
+  }
+  
+  .new-to-do-page .overlap-group {
+    background-color: #ffffff;
+    height: 35px;
+    position: relative;
+    width: 151px;
+  }
+  
+  .new-to-do-page .text-wrapper-4 {
+    color: #717171;
     font-family: "DM Serif Display-Regular", Helvetica;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 10px;
+    height: 26px;
+    left: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 55px;
   }
   
-  .new-to-do-page input {
-    color: #28536b;
+  .new-to-do-page .day {
+    height: 35px;
+    position: relative;
+    width: 68px;
+  }
+  
+  .new-to-do-page .overlap {
+    background-color: #ffffff;
+    height: 35px;
+    position: relative;
+    width: 66px;
+  }
+  
+  .new-to-do-page .text-wrapper-5 {
+    color: #717171;
+    font-family: "DM Serif Display-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    height: 26px;
+    left: 7px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 26px;
+  }
+  
+  .new-to-do-page .year {
+    height: 35px;
+    margin-right: -2px;
+    position: relative;
+    width: 82px;
+  }
+  
+  .new-to-do-page .div-wrapper {
+    background-color: #ffffff;
+    height: 35px;
+    position: relative;
+    width: 80px;
+  }
+  
+  .new-to-do-page .text-wrapper-6 {
+    color: #717171;
+    font-family: "DM Serif Display-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    height: 26px;
+    left: 7px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 36px;
+  }
+  
+  .new-to-do-page .add-button {
+    all: unset;
+    box-sizing: border-box;
+    height: 46px;
+    left: 143px;
+    position: absolute;
+    top: 639px;
+    width: 243px;
+  }
+  
+  .new-to-do-page .overlap-2 {
+    background-color: #28536b;
+    border-radius: 20px;
+    height: 46px;
+    position: relative;
+    width: 241px;
+  }
+  
+  .new-to-do-page .text-wrapper-7 {
+    color: #f6f0ed;
     font-family: "DM Serif Display-Regular", Helvetica;
     font-size: 16px;
     font-weight: 400;
     height: 22px;
-    padding: 5px;
-    box-sizing: border-box;
-    border: 1px solid #28536b;
-    margin-bottom: 10px;
-    width: 100%;
+    left: 107px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 12px;
   }
   
-  .new-to-do-page .notes-entry .rectangle,
-  .new-to-do-page .description .to-do-entry,
-  .new-to-do-page .date .frame {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .new-to-do-page .frame {
-    display: flex;
-  }
-  
-  .new-to-do-page .month,
-  .new-to-do-page .day,
-  .new-to-do-page .year {
-    margin-right: 20px;
-  }
-  
-  .new-to-do-page .overlap-group,
-  .new-to-do-page .overlap,
-  .new-to-do-page .div-wrapper {
-    background-color: #ffffff;
-    height: 35px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    border: 1px solid #28536b;
-    border-radius: 5px;
-  }
-  
-  .new-to-do-page .add-button,
   .new-to-do-page .cancel-button {
+    all: unset;
+    box-sizing: border-box;
     height: 46px;
-    width: 100%;
-    margin-top: 20px;
+    left: 143px;
+    position: absolute;
+    top: 691px;
+    width: 243px;
   }
   
-  .new-to-do-page .overlap-2,
   .new-to-do-page .overlap-3 {
-    background-color: #28536b;
+    background-color: #7ea8be;
     border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 46px;
+    position: relative;
+    width: 241px;
   }
   
-  .new-to-do-page .text-wrapper-7,
   .new-to-do-page .text-wrapper-8 {
     color: #f6f0ed;
+    font-family: "DM Serif Display-Regular", Helvetica;
     font-size: 16px;
+    font-weight: 400;
+    height: 22px;
+    left: 98px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
     text-align: center;
+    top: 12px;
+  }
+
+  .my-text-box {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    background-color: #ffcc00;
+    padding: 10px;
+    border: 1px solid #000;
   }
   
-  .new-to-do-page .text-wrapper-7 {
-    margin-left: auto;
-  }
-  
-  .new-to-do-page .text-wrapper-8 {
-    margin-left: auto;
-  }
   
