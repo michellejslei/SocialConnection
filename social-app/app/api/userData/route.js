@@ -1,16 +1,19 @@
 
-import connectToDB from "./model/mongodb.js"
-import userModel from "./model/userSchema"
+import {nextResponse} from "next/server"
+import connectToDB from "/Users/evanfung/SocialConnection/social-app/model/mongodb.js"
+import userModel from "/Users/evanfung/SocialConnection/social-app/model/userSchema.js"
 
 export async function POST(request) {
-    const {name} = await request.json();
+    const {description, month, day, year, notes} = await request.json();
     await connectToDB();
-    await userModel.create({name});
+    await userModel.create({description, month, day, year, notes});
+    return nextResponse.json({message: "Task added"})
 }
 
 export async function GET() {
     await connectToDB();
-    const {name} = userModel.find();
+    const task = await userModel.find()
+    return NextResponse.json({task})
 
 }
 

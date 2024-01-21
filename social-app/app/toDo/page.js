@@ -1,50 +1,87 @@
-"use client"
-import React from "react";
-import "./style.css";
-import Link from 'next/link'
+"use client";
+
+import { useState } from "react";
+import React from "react"
 
 export default function Home() {
+
+    const [description, setDescription] = useState("");
+    const [month, setMonth] = useState("");
+    const [day, setDay] = useState("");
+    const [year, setYear] = useState("");
+    const [notes, setNotes] = useState("");
+
+    const handleSubmit = async () => {
+        try {
+          const res = await fetch('http://localhost:3000/api/userData', {
+            method: 'POST',
+            headers: { 'Content-type': 'application/json' },
+            body: JSON.stringify({ description, month, day, year, notes}),
+          });
+    
+          if (res.ok) {
+            alert('Task Added to Database');
+            setMonth('');
+            setDay('');
+            setDescription('');
+            setYear('');
+            setNotes(''); // Clear the input field after a successful submission
+            // fetchTask(); // Fetch updated tennis shots after adding a new one
+          } else {
+            throw new Error('Failed to task');
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      };
+ 
+
+  
   return (
-    <div className="new-to-do-page">
-    <div className="container">
-      <div className="title text-wrapper">New To Do</div>
 
-      <div className="input-box notes-entry">
-        <div className="rectangle" />
-        <input type="text" placeholder="Notes" />
-      </div>
+    <main>
+    
+    <form onSubmit={handleSubmit}>
+      <input
+        onChange={(e) => setDescription(e.target.value)}
+        value={description}
+        type="text"
+        placeholder="Description"
+      />
 
-      <div className="input-box description">
-        <div className="to-do-entry" />
-        <input type="text" placeholder="Description" />
-      </div>
+      <input
+        onChange={(e) => setMonth(e.target.value)}
+        value={month}
+        type="text"
+        placeholder="Month"
+      />
 
-      <div className="input-box date">
-        <div className="frame">
-          <div className="input-box month">
-            <input type="text" placeholder="Month" />
-          </div>
-          <div className="input-box day">
-            <input type="text" placeholder="Day" />
-          </div>
-          <div className="input-box year">
-            <input type="text" placeholder="Year" />
-          </div>
-        </div>
-      </div>
-
-      <button className="submit-button">
-        <div className="overlap">
-          <div className="text-wrapper">Submit</div>
-        </div>
+      <input
+    
+        type = "text" 
+        placeholder = "Day" 
+        value = {day} 
+        onChange = {(e)=>{setDay(e.target.value)}}
+        />
+        <input
+    
+        type = "text" 
+        placeholder = "Year" 
+        value = {year} 
+        onChange = {(e) => {setYear(e.target.value)}}
+        />
+        <input
+        type = "text" 
+        placeholder = "Notes" 
+        value = {notes} 
+        onChange = {(e) => {setNotes(e.target.value)}}/>
+        
+        <button
+        type="submit">
+        Submit 
       </button>
-
-      <button className="cancel-button">
-        <div className="overlap">
-          <div className="text-wrapper">Cancel</div>
-        </div>
-      </button>
-    </div>
-  </div>
-  )
+    </form>
+    
+    </main>
+  );
 }

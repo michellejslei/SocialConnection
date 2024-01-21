@@ -1,106 +1,109 @@
-/* style.css */
 .new-to-do-page {
     background-color: #f6f0ed;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 100%;
+    height: 100vh;
   }
   
-  .new-to-do-page .container {
+  .new-to-do-page .div {
     background-color: #f6f0ed;
-    height: 832px;
-    position: relative;
-    width: 526px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
   
-  .new-to-do-page .text-wrapper {
+  .new-to-do-page .text-wrapper,
+  .new-to-do-page .notes-entry .text-wrapper-2,
+  .new-to-do-page .description .text-wrapper-3,
+  .new-to-do-page .date .text-wrapper-3,
+  .new-to-do-page .frame .month .overlap-group .text-wrapper-4,
+  .new-to-do-page .frame .day .overlap .text-wrapper-5,
+  .new-to-do-page .frame .year .div-wrapper .text-wrapper-6,
+  .new-to-do-page .add-button .overlap-2 .text-wrapper-7,
+  .new-to-do-page .cancel-button .overlap-3 .text-wrapper-8 {
     color: #28536b;
     font-family: "DM Serif Display-Regular", Helvetica;
-    font-size: 48px;
+    font-size: 16px;
     font-weight: 400;
-    height: 66px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 42px;
+    margin-bottom: 10px;
   }
   
-  .new-to-do-page .input-box {
-    position: absolute;
-    width: 411px;
-  }
-  
-  .new-to-do-page .notes-entry,
-  .new-to-do-page .description,
-  .new-to-do-page .month,
-  .new-to-do-page .day,
-  .new-to-do-page .year {
-    height: 217px;
-    left: 39px;
-    position: absolute;
-    width: 411px;
-  }
-  
-  .new-to-do-page .rectangle,
-  .new-to-do-page .to-do-entry {
-    background-color: #ffffff;
-    height: 170px;
-    left: 12px;
-    position: absolute;
-    width: 397px;
-  }
-  
-  .new-to-do-page .date {
-    height: 86px;
-    left: 39px;
-    position: absolute;
-    top: 249px;
-    width: 411px;
-  }
-  
-  .new-to-do-page .frame {
-    align-items: flex-start;
-    display: inline-flex;
-    gap: 50px;
-    left: 12px;
-    position: absolute;
-    top: 51px;
-  }
-  
-  .new-to-do-page .submit-button,
-  .new-to-do-page .cancel-button {
-    all: unset;
-    box-sizing: border-box;
-    height: 46px;
-    position: absolute;
-    width: 243px;
-  }
-  
-  .new-to-do-page .overlap {
-    background-color: #28536b;
-    border-radius: 20px;
-    height: 46px;
-    position: relative;
-    width: 241px;
-  }
-  
-  .new-to-do-page .overlap .text-wrapper {
-    color: #f6f0ed;
+  .new-to-do-page input {
+    color: #28536b;
     font-family: "DM Serif Display-Regular", Helvetica;
     font-size: 16px;
     font-weight: 400;
     height: 22px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 12px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #28536b;
+    margin-bottom: 10px;
+    width: 100%;
   }
   
+  .new-to-do-page .notes-entry .rectangle,
+  .new-to-do-page .description .to-do-entry,
+  .new-to-do-page .date .frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .new-to-do-page .frame {
+    display: flex;
+  }
+  
+  .new-to-do-page .month,
+  .new-to-do-page .day,
+  .new-to-do-page .year {
+    margin-right: 20px;
+  }
+  
+  .new-to-do-page .overlap-group,
+  .new-to-do-page .overlap,
+  .new-to-do-page .div-wrapper {
+    background-color: #ffffff;
+    height: 35px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid #28536b;
+    border-radius: 5px;
+  }
+  
+  .new-to-do-page .add-button,
   .new-to-do-page .cancel-button {
-    top: 691px;
-    background-color: #7ea8be;
+    height: 46px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .new-to-do-page .overlap-2,
+  .new-to-do-page .overlap-3 {
+    background-color: #28536b;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .new-to-do-page .text-wrapper-7,
+  .new-to-do-page .text-wrapper-8 {
+    color: #f6f0ed;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .new-to-do-page .text-wrapper-7 {
+    margin-left: auto;
+  }
+  
+  .new-to-do-page .text-wrapper-8 {
+    margin-left: auto;
   }
   
