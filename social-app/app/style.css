@@ -16,14 +16,15 @@
 
 .log-in-page .text-wrapper {
     color: #28536b;
-    font-family: "DM Serif Display-Regular", Helvetica;
+    /* font-family: "DM Serif Display-Regular", Helvetica; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 600;
     height: 66px;
-    left: 574px;
     letter-spacing: 0;
     line-height: normal;
-    position: absolute;
+    margin-top: 260px;
+    /* position: absolute; */
     text-align: center;
     top: 241px;
 }
@@ -42,6 +43,8 @@
     height: 46px;
     position: relative;
     width: 241px;
+    padding-left: 10px;
+    text-indent: 10px;
 }
 
 .log-in-page .text-wrapper-2 {
@@ -72,7 +75,7 @@
     font-size: 14px;
     font-weight: 400;
     height: 19px;
-    left: 586px;
+    left: 605px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
