@@ -1,5 +1,5 @@
 import React from "react";
-import "/Users/evanfung/Social-Connection/social-app/app/feed/components/style.css";
+import "/Users/warisbhatia/Desktop/final-social-connection/SocialConnection/social-app/app/feed/components/style.css";
 
 const MenuBar = () => {
   return (

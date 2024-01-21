@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Link from 'next/link'
-import MenuBar from "/Users/evanfung/Social-Connection/social-app/app/feed/components/MenuBar.js"
+import MenuBar from "/Users/warisbhatia/Desktop/final-social-connection/SocialConnection/social-app/app/feed/components/MenuBar.js"
 
 export default function Home() {
   return (
