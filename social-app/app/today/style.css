@@ -1,0 +1,74 @@
+.page-container {
+    font-family: 'Arial', sans-serif;
+    color: #4A4A4A;
+  }
+  
+  .header {
+    background-color: #EFEFEF;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+  }
+  
+  .logo {
+    /* Add your logo styles here */
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #4A4A4A;
+  }
+  
+  .nav-item.active {
+    font-weight: bold;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #28536B;
+    font-size: 2em;
+  }
+  
+  .section {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #717171;
+    font-size: 1.5em;
+  }
+  
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task {
+    background-color: #D3D3D3;
+    height: 20px;
+    border-radius: 4px;
+  }
+  
+  .completed-tasks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .completed {
+    background-color: #D3D3D3;
+    height: 100px;
+    border-radius: 4px;
+  }
+  

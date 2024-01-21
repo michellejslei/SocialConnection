@@ -78,8 +78,9 @@
     left: 605px;
     letter-spacing: 0;
     line-height: normal;
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
+    margin-top: 250px;
     top: 567px;
 }
 
